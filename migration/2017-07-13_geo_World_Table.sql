@@ -43,6 +43,6 @@ CREATE TABLE geo.world (
   pp_annual double precision
 );
 
-\copy geo.world from 'WorldTable_fronts_2017-07-13.txt' with (format csv, header, delimiter E'\t')
+\copy geo.world from 'WorldTable_fronts_2017-07-18.txt' with (format csv, header, delimiter E'\t')
 
 VACUUM FULL ANALYZE geo.world;
