@@ -16,7 +16,7 @@ IF [%3]==[] (
 ) ELSE (
   SET DbServer=%3
 )
-
-pgsql2shp -f %ShapeFile% -u sau_geo -h %DbServer% -P j9CRqMbfEUYG sau_geo %TableOrQuery%
+echo Password for user sau_geo
+pgsql2shp -f %ShapeFile% -u sau_geo -h %DbServer% sau_geo %TableOrQuery%
 @ECHO ON
 

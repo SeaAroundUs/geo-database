@@ -18,5 +18,5 @@ IF [%4]==[] (
 )
 
 echo Password for user sau_geo
-pg_dump -h %DbHost% -p %DbPort% -f %1 -Fc %DataOnly% -E UTF8 -U sau_geo -t %1 sau_geo
+pg_dump -h %DbHost% -p %DbPort% -f %1 -Fc %DataOnly% -E UTF8 -U sau_geo -t %1 sau_geo -v
 @ECHO ON

@@ -12,4 +12,4 @@ else
   DbPort=$3
 fi
 echo Password for user sau_geo
-pg_dump -h $DbHost -p $DbPort -f $1.schema -T web.django_migrations -Fc -a -E UTF8 -U sau_geo -n $1 sau_geo
+pg_dump -h $DbHost -p $DbPort -f $1.schema -T web.django_migrations -Fc -a -E UTF8 -U sau_geo -n $1 sau_geo -v
