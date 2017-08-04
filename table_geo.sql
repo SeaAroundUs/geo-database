@@ -45,6 +45,19 @@ CREATE TABLE geo.lme (
   geom public.geometry(MultiPolygon, 4326)
 );
 
+CREATE TABLE geo.meow (
+  gid serial primary key,
+  meow_id int,
+  eco_id int,
+  ecoregion character varying (70),
+  prov_id int,
+  province character varying (70),
+  realm_id int,
+  realm character varying (70),
+  lat_zone character varying (70),
+  shape_area numeric,
+  geom public.geometry(MultiPolygon, 4326)
+);
 
 CREATE TABLE geo.rfmo (  
   gid          serial PRIMARY KEY,
@@ -434,7 +447,8 @@ CREATE TABLE geo.world(
   bt_2001 double precision,
   pp_10yr_avg double precision,
   sst_avg double precision,
-  pp_annual double precision
+  pp_annual double precision,
+  meow_id double precision
 );
 
 CREATE TABLE geo.worldsq(
